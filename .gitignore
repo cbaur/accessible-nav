@@ -3,6 +3,8 @@
 css/*.css
 css/*.css.map
 
+.sass-cache
+
 # Logs
 logs
 *.log
