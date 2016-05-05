@@ -1,1 +1,15 @@
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "variables";
+@import "bootstrap";
+
+li.nav-more {
+  position: relative;
+  padding-right: 44px;
+
+  .nav-more-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: $nav-link-padding;
+    border: 0;
+  }
+}
