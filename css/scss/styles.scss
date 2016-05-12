@@ -1,6 +1,28 @@
 @import "variables";
 @import "bootstrap";
 
+// Skip navigation
+ul.skip-nav {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: $zindex-navbar-fixed+1;
+  width: 100%;
+
+  >li {
+    position: static;
+    >a {
+      &:focus {
+        position: absolute;
+        left: 9999px;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
 li.nav-more {
   position: relative;
   padding-right: 44px;
