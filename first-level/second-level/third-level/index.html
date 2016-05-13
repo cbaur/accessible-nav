@@ -8,13 +8,13 @@
     <title>Accessible Navigation Case Study</title>
 
     <!-- Bootstrap -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="../../../css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script src="node_modules/respond.js/dest/respond.min.js"></script>
+    <script src="../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="../../../node_modules/respond.js/dest/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -25,14 +25,15 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <nav id="navigation" role="navigation" aria-label="Main navigation">
+            <nav id="navigation" role="navigation" aria-labelledby="nav-label">
+                <h3 id="nav-label">First Level Navigation</h3>
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="#">Lorem</a></li>
                     <li><a href="#">Ipsum</a></li>
                     <li><a href="#">Dolor</a></li>
                     <li><a href="#">Sit amet</a></li>
-                    <li class="nav-more">
-                        <a href="first-level">First Level</a>
+                    <li class="nav-more active">
+                        <a href="../">Second Level</a>
                         <button id="dropup1" data-toggle="dropdown" class="btn btn-link dropdown-toggle nav-more-btn" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle Dropdown">
                             <span class="sr-only">Open dropdown menu</span>
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -43,9 +44,9 @@
                                     <div class="col-sm-9 col-sm-offset-3">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <h4><a href="first-level/second-level">Second Level</a></h4>
+                                                <h4><a class="active" href="">Third Level</a></h4>
                                                 <ul class="nav">
-                                                    <li><a href="first-level/second-level/third-level">Third Level</a></li>
+                                                    <li><a href="#">Fourth Level</a></li>
                                                     <li><a href="#">Another action</a></li>
                                                     <li><a href="#">Something else here</a></li>
                                                     <li role="separator" class="divider"></li>
@@ -112,20 +113,24 @@
                     </li>
                 </ul>
             </nav>
+            <a class="btn btn-default btn-block" href="../../../index.html">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                Back to Home Page
+            </a>
         </div>
         <div class="col-sm-9">
             <main id="content" role="main" aria-labelledby="firstheader">
-                <h1 id="firstheader">Main content</h1>
+                <h1 id="firstheader">Third level content</h1>
             </main>
         </div>
     </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
-<script src="js/scripts.js"></script>
+<script src="../../../js/scripts.js"></script>
 </body>
 </html>
